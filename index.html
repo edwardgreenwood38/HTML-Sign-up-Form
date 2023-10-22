@@ -37,7 +37,8 @@
                 <input type="text" id="city" name="city">
 
                 <label for="state">Your State</label>
-                <select name="state"> 
+                <input type="list" name="state" list="state-list">
+                <datalist id="state-list"> 
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -87,7 +88,7 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WV">West Virginia</option>
                     <option value="WY">Wyoming</option>
-                </select>
+                </datalist>
                 
                 <label for="zip">Your ZipCode</label>
                 <input type="text" id="zip" name="zip">
@@ -101,7 +102,7 @@
                 <legend>Your Preferences</legend>
                 <h3>Choose your location</h3>
                 <div>
-                    <input type="radio" id="aruba" name="aruba" value="Aruba" checked>
+                    <input type="radio" id="aruba" name="aruba" value="Aruba">
                     <label for="aruba">Aruba</label>
                 </div>
                 <div>
@@ -109,7 +110,7 @@
                     <label for="japan">Japan</label>
                 </div>
                 <div>
-                    <input type="radio" id="reykjavik" name="reykjavik" value="Reykjavik">
+                    <input type="radio" id="reykjavik" name="reykjavik" value="Reykjavik" checked>
                     <label for="reykjavik">Reykjavik</label>
                 </div>
                 <div>
@@ -132,7 +133,7 @@
                     <label for="sauna">Sauna</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="hottub" value="hottub">
+                    <input type="checkbox" name="hottub" value="hottub" checked>
                     <label for="hottub">In-room Hot Tub</label>
                 </div>
                 <div>
@@ -150,6 +151,7 @@
             </fieldset>
             
             <!-- TODO: Submit Button -->
+            <input type="submit" value="Enter the Contest">
         </form>
     </main>
     <footer>

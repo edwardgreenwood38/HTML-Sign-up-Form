@@ -94,7 +94,7 @@
                 </datalist>
                 
                 <label for="zip">Your ZipCode</label>
-                <input type="number" id="zip" name="zip">
+                <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="5-Digit US Zip Code">
             </fieldset>
 
             <!-- TODO: Second fieldset -->
@@ -151,6 +151,13 @@
                     <input type="checkbox" name="boat-tour" value="boat-tour">
                     <label for="boat-tour">Boat Tour</label>
                 </div>
+            </fieldset>
+
+            <!-- security passcode -->
+            <fieldset>
+                <legend>Passcode</legend>
+                <label for="passcode">Your Secret Code</label><span class="required-field">*</span>
+                <input type="password" name="passcode" id="passcode" required pattern="[0-9a-zA-Z]{6}" title="6 Alphanumeric Character Passcode.">
             </fieldset>
             
             <!-- TODO: Submit Button -->

@@ -14,11 +14,11 @@
         <h2>Vacation Contest Sign-Up Form</h2>
         <form method="get" action="results.html"> <!-- TODO: Set Action and Method Properties -->
             <div>
-                <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
+                <label for="firstname">Your First Name</label><span class="required-field">*</span>
+                <input type="text" id="firstname" name="firstname" required>
                 <!-- TODO: Create a "lastname" input with type "text" -->
-                <label for="lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <label for="lastname">Your Last Name</label><span class="required-field">*</span>
+                <input type="text" id="lastname" name="lastname" required>
             </div>
             <!-- TODO: Make fieldset and legend -->
             <!-- Todo: Email Input -->
@@ -26,8 +26,8 @@
             <!-- Todo: City, State, and Zip Inputs -->
             <fieldset>
                 <legend>Your Contact Info</legend>
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email">
+                <label for="email">Your Email</label><span class="required-field">*</span>
+                <input type="email" id="email" name="email" required>
 
                 <!-- address -->
                 <label for="address">Your Street Address</label>
